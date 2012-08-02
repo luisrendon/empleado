@@ -1,0 +1,453 @@
+13 jul 2012 10:02:09,896 INFO  ~ Starting C:\play-1.2.4\empleado
+13 jul 2012 10:02:10,381 WARN  ~ You're running Play! in DEV mode
+13 jul 2012 10:02:10,474 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+13 jul 2012 10:03:25,603 ERROR ~ Cannot connected to the database : Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:629)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+13 jul 2012 10:03:26,306 ERROR ~ 
+
+@6b2m8d03e
+Internal Server Error (500) for request GET /@tests
+
+Database error
+A database error occured : Cannot connected to the database, Access denied for user 'root'@'localhost' (using password: YES)
+
+play.exceptions.DatabaseException: Cannot connected to the database, Access denied for user 'root'@'localhost' (using password: YES)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:142)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:629)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	... 5 more
+13 jul 2012 10:03:27,306 ERROR ~ Cannot connected to the database : Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+13 jul 2012 10:03:27,337 ERROR ~ 
+
+@6b2m8d03f
+Internal Server Error (500) for request GET /@tests
+
+Database error
+A database error occured : Cannot connected to the database, Access denied for user 'root'@'localhost' (using password: YES)
+
+play.exceptions.DatabaseException: Cannot connected to the database, Access denied for user 'root'@'localhost' (using password: YES)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:142)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	... 5 more
+13 jul 2012 10:03:28,993 ERROR ~ Cannot connected to the database : Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+13 jul 2012 10:03:29,025 ERROR ~ 
+
+@6b2m8d03g
+Internal Server Error (500) for request GET /@tests
+
+Database error
+A database error occured : Cannot connected to the database, Access denied for user 'root'@'localhost' (using password: YES)
+
+play.exceptions.DatabaseException: Cannot connected to the database, Access denied for user 'root'@'localhost' (using password: YES)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:142)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	... 5 more
+13 jul 2012 10:05:10,915 ERROR ~ Cannot connected to the database : Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+13 jul 2012 10:05:10,931 ERROR ~ 
+
+@6b2m8d03h
+Internal Server Error (500) for request GET /@tests
+
+Database error
+A database error occured : Cannot connected to the database, Access denied for user 'root'@'localhost' (using password: YES)
+
+play.exceptions.DatabaseException: Cannot connected to the database, Access denied for user 'root'@'localhost' (using password: YES)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:142)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+	at play.Play.start(Play.java:515)
+	at play.Play.detectChanges(Play.java:618)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:931)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4031)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1296)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2338)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2371)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:378)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:90)
+	... 5 more
+13 jul 2012 10:05:41,223 INFO  ~ Connected to jdbc:mysql://localhost/emp?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+13 jul 2012 10:05:47,082 INFO  ~ Application 'empleado' is now started !
+13 jul 2012 10:08:04,311 WARN  ~ SQL Error: 1054, SQLState: 42S22
+13 jul 2012 10:08:04,311 ERROR ~ Unknown column 'bynombre' in 'where clause'
+13 jul 2012 10:08:04,576 ERROR ~ 
+
+@6b2m8d03i
+Internal Server Error (500) for request GET /borra.html?nom=luis&btn=salvar
+
+Execution exception (In /app/controllers/Application.java around line 52)
+JPAQueryException occured : Error while executing query from models.empleado where bynombre = ?1: Unknown column 'bynombre' in 'where clause'
+
+play.exceptions.JavaExecutionException: Error while executing query <strong>from models.empleado where bynombre = ?1</strong>: Unknown column 'bynombre' in 'where clause'
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.empleado where bynombre = ?1</strong>: Unknown column 'bynombre' in 'where clause'
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:343)
+	at controllers.Application.borra(Application.java:52)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:548)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:502)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:478)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'bynombre' in 'where clause'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1986)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2140)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2626)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2111)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2273)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
+	at org.hibernate.loader.Loader.doList(Loader.java:2533)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2276)
+	at org.hibernate.loader.Loader.list(Loader.java:2271)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:452)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1268)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:246)
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:337)
+	... 7 more
+13 jul 2012 10:09:54,919 INFO  ~ Connected to jdbc:mysql://localhost/emp?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+13 jul 2012 10:23:07,774 ERROR ~ 
+
+@6b2m8d03j
+Internal Server Error (500) for request GET /cambio.html?nom1=omar&ap1=prado&am1=polanco&nom2=luis&btn=Modificar
+
+Execution exception (In /app/controllers/Application.java around line 34)
+IllegalArgumentException occured : org.hibernate.QueryParameterException: Position beyond number of declared ordinal parameters. Remember that ordinal parameters are 1-based! Position: 2
+
+play.exceptions.JavaExecutionException: org.hibernate.QueryParameterException: Position beyond number of declared ordinal parameters. Remember that ordinal parameters are 1-based! Position: 2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.IllegalArgumentException: org.hibernate.QueryParameterException: Position beyond number of declared ordinal parameters. Remember that ordinal parameters are 1-based! Position: 2
+	at org.hibernate.ejb.QueryImpl.setParameter(QueryImpl.java:440)
+	at org.hibernate.ejb.QueryImpl.setParameter(QueryImpl.java:72)
+	at play.db.jpa.JPQL.bindParameters(JPQL.java:174)
+	at play.db.jpa.JPQL.find(JPQL.java:48)
+	at models.empleado.find(empleado.java)
+	at controllers.Application.cambio(Application.java:34)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:548)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:502)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:478)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: org.hibernate.QueryParameterException: Position beyond number of declared ordinal parameters. Remember that ordinal parameters are 1-based! Position: 2
+	at org.hibernate.engine.query.ParameterMetadata.getOrdinalParameterDescriptor(ParameterMetadata.java:81)
+	at org.hibernate.engine.query.ParameterMetadata.getOrdinalParameterExpectedType(ParameterMetadata.java:87)
+	at org.hibernate.impl.AbstractQueryImpl.determineType(AbstractQueryImpl.java:444)
+	at org.hibernate.impl.AbstractQueryImpl.setParameter(AbstractQueryImpl.java:416)
+	at org.hibernate.ejb.QueryImpl.setParameter(QueryImpl.java:434)
+	... 11 more
+13 jul 2012 10:25:29,757 INFO  ~ Connected to jdbc:mysql://localhost/emp?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+13 jul 2012 10:34:39,550 INFO  ~ Connected to jdbc:mysql://localhost/emp?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+13 jul 2012 10:46:18,508 INFO  ~ Connected to jdbc:mysql://localhost/emp?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+13 jul 2012 10:46:34,475 WARN  ~ SQL Error: 1054, SQLState: 42S22
+13 jul 2012 10:46:34,475 ERROR ~ Unknown column 'nombre' in 'where clause'
+13 jul 2012 10:46:34,694 ERROR ~ 
+
+@6b2m8d03k
+Internal Server Error (500) for request GET /cambio_puesto.html?pu1=ejecutivo&pu2=cajero&btn=Modificar
+
+Execution exception (In /app/controllers/Application.java around line 63)
+JPAQueryException occured : Error while executing query from models.puesto where nombre = ?: Unknown column 'nombre' in 'where clause'
+
+play.exceptions.JavaExecutionException: Error while executing query <strong>from models.puesto where nombre = ?</strong>: Unknown column 'nombre' in 'where clause'
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.puesto where nombre = ?</strong>: Unknown column 'nombre' in 'where clause'
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:343)
+	at controllers.Application.cambio_puesto(Application.java:63)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:548)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:502)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:478)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'nombre' in 'where clause'
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1986)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2140)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2626)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2111)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2273)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
+	at org.hibernate.loader.Loader.doList(Loader.java:2533)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2276)
+	at org.hibernate.loader.Loader.list(Loader.java:2271)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:452)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1268)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:246)
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:337)
+	... 7 more
+13 jul 2012 10:55:19,784 INFO  ~ Connected to jdbc:mysql://localhost/emp?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+13 jul 2012 10:55:42,782 ERROR ~ 
+
+@6b2m8d03l
+Internal Server Error (500) for request GET /borra_puesto.html?pu=administrador&btn=borrar
+
+Execution exception (In /app/controllers/Application.java around line 98)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at org.hibernate.hql.ast.util.SessionFactoryHelper.findSQLFunction(SessionFactoryHelper.java:364)
+	at org.hibernate.hql.ast.tree.IdentNode.getDataType(IdentNode.java:293)
+	at org.hibernate.hql.ast.tree.BinaryLogicOperatorNode.extractDataType(BinaryLogicOperatorNode.java:232)
+	at org.hibernate.hql.ast.tree.BinaryLogicOperatorNode.initialize(BinaryLogicOperatorNode.java:58)
+	at org.hibernate.hql.ast.HqlSqlWalker.prepareLogicOperator(HqlSqlWalker.java:1199)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4414)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2047)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:831)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:617)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:301)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:244)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:254)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:185)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:124)
+	at org.hibernate.impl.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:156)
+	at org.hibernate.impl.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:135)
+	at org.hibernate.impl.SessionImpl.createQuery(SessionImpl.java:1770)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createQuery(AbstractEntityManagerImpl.java:272)
+	at play.db.jpa.JPQL.find(JPQL.java:46)
+	at models.empleado.find(empleado.java)
+	at controllers.Application.borra_puesto(Application.java:98)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:548)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:502)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:478)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+13 jul 2012 10:57:09,025 ERROR ~ 
+
+@6b2m8d03m
+Internal Server Error (500) for request GET /borra_puesto.html?pu=administrador&btn=borrar
+
+Execution exception (In /app/controllers/Application.java around line 98)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at org.hibernate.hql.ast.util.SessionFactoryHelper.findSQLFunction(SessionFactoryHelper.java:364)
+	at org.hibernate.hql.ast.tree.IdentNode.getDataType(IdentNode.java:293)
+	at org.hibernate.hql.ast.tree.BinaryLogicOperatorNode.extractDataType(BinaryLogicOperatorNode.java:232)
+	at org.hibernate.hql.ast.tree.BinaryLogicOperatorNode.initialize(BinaryLogicOperatorNode.java:58)
+	at org.hibernate.hql.ast.HqlSqlWalker.prepareLogicOperator(HqlSqlWalker.java:1199)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4414)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2047)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:831)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:617)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:301)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:244)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:254)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:185)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:124)
+	at org.hibernate.impl.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:156)
+	at org.hibernate.impl.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:135)
+	at org.hibernate.impl.SessionImpl.createQuery(SessionImpl.java:1770)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.createQuery(AbstractEntityManagerImpl.java:272)
+	at play.db.jpa.JPQL.find(JPQL.java:46)
+	at models.empleado.find(empleado.java)
+	at controllers.Application.borra_puesto(Application.java:98)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:548)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:502)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:478)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
